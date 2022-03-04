@@ -42,7 +42,7 @@ function GridMainBody() {
                         </div>
                         <div className='btn-gp'>
                             <div>
-                                <button className='cart-btn home' onClick={() => navigate('collections')}>
+                                <button className='cart-btn home' onClick={() => navigate('/collections')}>
                                     <FontAwesomeIcon icon={faCartPlus} className='body-cart-icon' />
                                     Click Here To Shop Now
                                 </button>
