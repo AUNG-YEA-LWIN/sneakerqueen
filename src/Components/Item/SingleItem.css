@@ -1,0 +1,125 @@
+.single-item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main.sg {
+    
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.sgi-image {
+
+    width: 78%;
+    height: 83%;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 60px;
+    border: 1px solid black;
+}
+
+.sg-txt {
+
+    margin-right: 20px;
+}
+
+.company-name.sg {
+
+    font-size: 20px;
+}
+
+.back-btn {
+
+    width: 20%;
+    height: 38px;
+    background-color: orange;
+    color: #fff;
+    margin-left: 5%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media  screen and (min-width: 1380px) {
+
+.single-item{
+
+    max-width: 1440px;
+}
+
+.sgi-image{
+
+    width: 60%;
+    height: 65%;
+    margin-left: 20%;
+}
+}
+
+@media  screen and (max-width: 1024px) {
+
+.main.sg{
+    
+    width: 95vw;
+}
+
+.sgi-image{
+
+    width: 68%;
+    height: 78%;
+}
+
+}
+
+@media  screen and (max-width: 768px) {
+
+.main.sg{
+
+    width: 95vw;
+}
+}
+
+@media  screen and (max-width: 425px) {
+
+.main.sg{
+
+    width: 85vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+}
+
+.sgi-image{
+
+    margin-left: 10%;
+}
+
+.sg-txt{
+
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.sg-btns{
+
+    display: flex;
+    margin-bottom: 5%;
+}
+
+}
+
+@media  screen and (max-width: 320px) {
+
+.back-btn{
+
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+}

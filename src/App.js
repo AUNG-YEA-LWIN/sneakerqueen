@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import GridMainBody from './Components/Homepage/GridMainBody'
+import { Routes, Route } from 'react-router-dom';
+import Collections from './Components/Collections/Collectionspage';
+import Men from './Components/Men/Menpage';
+import Women from './Components/Women/Womenpage';
+import Boy from './Components/Boy/Boypage';
+import Girl from './Components/Girl/Girlpage'
+import Contact from './Components/Contact/Contactpage';
+import GridNavigation from './Components/Homepage/GridNavigation';
+import titles from './DataStorage';
 import './App.css';
+import NoMatch from './Components/Homepage/NoMatch';
+import AddToCart from './Components/Cart/AddToCart';
+import SingleItem from './Components/Item/SingleItem';
 
 function App() {
+
+const products = titles;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GridNavigation/>
+      <Routes> 
+        <Route exact path='/sneakerqueen' element={<GridMainBody />} />
+        <Route path='collections' element={<Collections products={products} />} />
+        <Route path='collections/:id'  element={<SingleItem />} />  
+        <Route path='men' element={<Men products={products} /> } />
+        <Route path='women' element={<Women products={products} />} />
+        <Route path='boy' element={<Boy />} />
+        <Route path='girl' element={<Girl />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='mycart' element={<AddToCart />} />
+        <Route path='*' element={<NoMatch />} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export default App
