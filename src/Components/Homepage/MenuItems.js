@@ -10,7 +10,7 @@ function MenuItems() {
           <NavLink to='/women'>Women</NavLink>
           <NavLink to='/boy'>Boy</NavLink>
           <NavLink to='/girl'>Girl</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
+          <NavLink to='/sinup'>Singup</NavLink>
     </nav>
   )
 }
