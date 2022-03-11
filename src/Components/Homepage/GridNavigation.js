@@ -72,7 +72,7 @@ function GridNavigation(props) {
                             <div key={item.id} className='row'>
                                 <div><img src={item.image} className='item-image' /></div>
                                 <div className='item-genders'>{item.gender}</div>
-                                <div>
+                                <div className='item-qty'>
                                     {item.qty} x ${item.price.toFixed(2)}
                                 </div>
                             </div>
@@ -95,7 +95,9 @@ function GridNavigation(props) {
                 {/* End Dynamic Items Lists Section */}
             </div>
             {/* End Buy Products Section */}
-            <div className='my-account'><img src={myacc} alt='myavatar' className='avatar' /></div>
+            <div className='my-account'>
+                <Link to='/profile'><img src={myacc} alt='myavatar' className='avatar' /></Link>
+            </div>
         </div>
         <div className='phone-navigation' id='ph-navi'>
             <MenuItems />

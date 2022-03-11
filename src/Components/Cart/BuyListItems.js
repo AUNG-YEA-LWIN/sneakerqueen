@@ -29,7 +29,7 @@ function BuyListItems({ item, removeFromCart, adjustQty }) {
                 <input min='1' max='30' type='number' value={input} name='qty' className='qty' onChange={onChangeHandler} />
                 <p className='item-price'>${item.price.toFixed(2)}</p>
                 <button className='remove-btn' onClick={() => removeFromCart(item.id)}>
-                    <FontAwesomeIcon icon={faTrash} color='orange' size='2x' className='fa-trash' />
+                    <FontAwesomeIcon icon={faTrash} color='orange' className='fa-trash' />
                 </button>
             </div>
         </div>

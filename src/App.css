@@ -1,0 +1,33 @@
+.error-msg{
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: bold;
+    max-width: 400px;
+    margin-bottom: 18px;
+}
+
+.btnpf{
+
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnlogout{
+
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+@media  screen and (max-width: 425px) {
+    
+}

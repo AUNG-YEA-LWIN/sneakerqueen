@@ -20,7 +20,7 @@ function SingleItem(props) {
                 </div>
                 <div className='sg-txt' >
                 <p className='company-name sg'>SNEAKER COMPANY</p>
-                <h3 className='sg-caption'><i>Caption:</i> {currentItem.caption}</h3>
+                <h5 className='sg-caption'><i>Caption:</i> {currentItem.caption}</h5>
                 <p><i>Description: </i>{currentItem.description}</p>
                 <p><i>Gender:</i> {currentItem.gender}</p>
                 <p><i>Price: </i> ${currentItem.price.toFixed(2)}</p>

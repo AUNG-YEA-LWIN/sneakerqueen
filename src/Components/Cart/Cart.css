@@ -75,7 +75,7 @@
 }
 .qty{
 
-    width: 30px;
+    width: 40px !important;
 }
 
 .qty.one{
@@ -137,6 +137,10 @@
     margin-bottom: 10px;
 }
 
+.fa-trash{
+
+    font-size: 25px;
+}
 .fa-trash:hover{
 
     color: red;

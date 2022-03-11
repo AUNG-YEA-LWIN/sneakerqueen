@@ -9,7 +9,7 @@
 
 .main-item-photo{
 
-    background-color: rgb(96, 224, 145);
+    /* background-color: rgb(96, 224, 145); */
     width: 350px;
     height: 300px;
     margin-top: 5%;
@@ -31,8 +31,8 @@
 
 .lg-photo{
 
-    width: 350px;
-    height: 300px;
+    width: 346px;
+    height: 296px;
     border-radius: 20px;
 }
 
@@ -100,24 +100,9 @@
 
 }
 
-.btn {
-
-    width: 50px;
-    height: 30px;
-    outline: none;
-    background-color: #f4f4f4;
-    color: orange;
-    border: none;
-    /* margin-left: 1px; */
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
 .cart-btn{
 
-    width: 200px;
+    width: 220px;
     height: 40px;
     background-color: orange;
     margin-left: 20px;
@@ -166,14 +151,21 @@
 
     .main-body {
 
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
+    .text-body {
+
+        margin-top: 5%;
+        height: 350px;
+    }
+
     .main-item-photo {
 
-        width: 100vw;
-        height: 65vh;
+        width: 99vw;
+        height: 75vh;
         margin-left: 0px;
         margin-top: 0px;
         border-radius: 0px;
@@ -181,8 +173,8 @@
 
     .lg-photo{
 
-        width: 100vw;
-        height: 75vh;
+        width: 98vw;
+        height: 74vh;
         align-items: center;
         border-radius: 0px;
 
@@ -199,28 +191,28 @@
 
     .main-body {
 
+        height: 105vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 
     .main-item-photo {
 
-        width: 100vw;
-        height: 35vh;
-        margin-left: 0px;
+        width: 99vw;
+        height: 38vh;
+        margin-left: 1px;
         margin-top: 0px;
         border-radius: 0px;
-
-
+        border: 2px solid orange
     }
 
     .lg-photo{
 
-        width: 100vw;
+        width: 96vw;
         height: 35vh;
         align-items: center;
         border-radius: 0px;
-
+        border-color: blueviolet;
     }
 
     .items {
@@ -232,11 +224,6 @@
 
         width: 90vw;
         height: 50vh;
-    }
-
-    .btn {
-
-        margin-left: 8%;
     }
 
     .cart-btn {

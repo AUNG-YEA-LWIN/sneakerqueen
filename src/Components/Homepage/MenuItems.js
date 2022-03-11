@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import {useUserAuth} from '../../context/AuthContext';
 
 function MenuItems() {
+
+  const {user} = useUserAuth();
 
   return (
     <nav className='menu-items'>
@@ -10,7 +13,10 @@ function MenuItems() {
           <NavLink to='/women'>Women</NavLink>
           <NavLink to='/boy'>Boy</NavLink>
           <NavLink to='/girl'>Girl</NavLink>
-          <NavLink to='/sinup'>Singup</NavLink>
+          {!user && (
+          <NavLink to='/signup'>Sign Up</NavLink>
+          )}
+          
     </nav>
   )
 }
