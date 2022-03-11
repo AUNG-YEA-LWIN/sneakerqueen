@@ -25,7 +25,7 @@ function SingleItem(props) {
                 <p><i>Gender:</i> {currentItem.gender}</p>
                 <p><i>Price: </i> ${currentItem.price.toFixed(2)}</p>
                 <div className='sg-btns'>
-                    <button className='cart-btn' onClick={() => addToCart(currentItem.id)} >
+                    <button className='cart-btn-sg' onClick={() => addToCart(currentItem.id)} >
                         <FontAwesomeIcon icon={faCartPlus} className='body-cart-icon' />
                         Add To Cart
                     </button>
