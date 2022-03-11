@@ -196,6 +196,12 @@
         grid-template-rows: 1fr 2fr;
     }
 
+    .text-body {
+
+        width: 80vw;
+        margin-left: 3%;
+    }
+
     .main-item-photo {
 
         width: 99vw;
