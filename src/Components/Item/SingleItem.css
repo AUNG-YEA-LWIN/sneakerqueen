@@ -60,7 +60,7 @@
     cursor: pointer;
     margin-right: 5px;
     margin-bottom: 3%;
-    
+
 }
 @media  screen and (min-width: 1380px) {
 
@@ -129,4 +129,12 @@
     /* margin-bottom: 7%; */
 }
 
+}
+
+@media  screen and (max-width: 425px) {
+
+.back-btn {
+
+    margin-right: 3%;
+}
 }
