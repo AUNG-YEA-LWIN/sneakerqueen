@@ -110,7 +110,7 @@
 .sg-btns{
 
     display: flex;
-    margin-bottom: 7%;
+    /* margin-bottom: 7%; */
 }
 
 }
@@ -121,7 +121,7 @@
 
     margin-right: 5%;
     transform: translateY(10%);
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 }
