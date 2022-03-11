@@ -50,7 +50,7 @@ function Signup() {
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
             <Card.Body>
-              <h2 className='text-center mb-4'>Sing Up</h2>
+              <h2 className='text-center mb-4'>Sign Up</h2>
               {error && <Alert variant='danger'>{error}</Alert>}
               <Form onSubmit={handleSubmit}>
                 <Form.Group id='email'>
@@ -69,7 +69,7 @@ function Signup() {
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)} />
                 </Form.Group>
-                <Button className='w-100 h-100 mt-4' type='submit'>Sing Up</Button>
+                <Button className='w-100 h-100 mt-4' type='submit'>Sign Up</Button>
               </Form>
             </Card.Body>
           </Card>
