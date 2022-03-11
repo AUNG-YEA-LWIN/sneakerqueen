@@ -3,22 +3,12 @@ import { Form, Button, Card, Container, Alert } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../../context/AuthContext'
 
-// import {signup, useAuth} from '../../firebase'
-
-
 function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const { signUp } = useUserAuth();
   const navigate = useNavigate();
-
-
-  // const [loading, setLoading] = useState(false);
-  // const currentUser = useAuth();
-  // const emailRef = useRef()
-  // const passwordRef = useRef()
-  // const nameRef = useRef()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,18 +19,6 @@ function Signup() {
     } catch (err) {
       setError(err.message);
     }
-
-
-    // const email = emailRef.current.value;
-    // const name = nameRef.current.value;
-    // const password = passwordRef.current.value;
-    // setLoading(true)
-    // try{
-    //   await signup(email, password);
-    // } catch {
-    //   alert('Error!')
-    // }
-    // setLoading(false)
 
   }
 
