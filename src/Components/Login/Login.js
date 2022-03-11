@@ -53,7 +53,7 @@ function Login() {
                         </Card.Body>
                     </Card>
                     <div className='w-100 text-center mt-2'>
-                        Are you new user? <Link to='/singup' >Sign Up</Link>
+                        Are you new user? <Link to='/signup' >Sign Up</Link>
                     </div>
                 </div>
             </Container>

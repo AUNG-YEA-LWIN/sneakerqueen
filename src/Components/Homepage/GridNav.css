@@ -288,7 +288,7 @@
 .phone-navigation {
 
     width: 60vw;
-    height: 60vh;
+    height: 55vh;
     background-color: #f4f4f4;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     display: none;
@@ -335,7 +335,7 @@
 .bars-icon{
 
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .menu-items{
@@ -377,6 +377,11 @@
 }
 
 @media  screen and (max-width: 425px) {
+
+.my-account{
+
+    margin-top: 20px;
+}
 
 .data-storage{
 
