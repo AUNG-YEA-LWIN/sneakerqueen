@@ -16,7 +16,7 @@ function Login() {
         setError('');
         try {
             await logIn(email, password);
-            navigate('/sneakerqueen');
+            navigate('/');
         } catch (err) {
             setError(err.message);
         }
