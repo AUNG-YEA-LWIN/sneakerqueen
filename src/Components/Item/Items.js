@@ -4,6 +4,7 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
 import { addToCart, loadCurrentItem } from '../../redux/Shopping/ShoppingActions';
 import { Link } from 'react-router-dom'
+import Rating from '../Rating/Rating';
 
 function Items(props) {
 
@@ -17,6 +18,7 @@ function Items(props) {
             </Link>
             <p className='ds-title1'>Gender: {product.gender}</p>
             <p className='ds-title2'>Price: ${product.price.toFixed(2)}</p>
+            <Rating />
             <div>
                 <button className='cart-btn' onClick={() => addToCart(product.id)} >
                     <FontAwesomeIcon icon={faCartPlus} className='body-cart-icon' />
