@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sneakerqueen/static/css/main.b7591db3.css",
-    "main.js": "/sneakerqueen/static/js/main.14587b18.js",
+    "main.js": "/sneakerqueen/static/js/main.ddae3481.js",
     "static/js/787.eb4d9477.chunk.js": "/sneakerqueen/static/js/787.eb4d9477.chunk.js",
     "static/media/image-product-2.jpg": "/sneakerqueen/static/media/image-product-2.27964a008da5c7e82279.jpg",
     "static/media/image-product-1.jpg": "/sneakerqueen/static/media/image-product-1.195566d938f8f76b6b45.jpg",
@@ -9,11 +9,11 @@
     "static/media/image-product-3.jpg": "/sneakerqueen/static/media/image-product-3.7e0098e15418695edcbc.jpg",
     "index.html": "/sneakerqueen/index.html",
     "main.b7591db3.css.map": "/sneakerqueen/static/css/main.b7591db3.css.map",
-    "main.14587b18.js.map": "/sneakerqueen/static/js/main.14587b18.js.map",
+    "main.ddae3481.js.map": "/sneakerqueen/static/js/main.ddae3481.js.map",
     "787.eb4d9477.chunk.js.map": "/sneakerqueen/static/js/787.eb4d9477.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7591db3.css",
-    "static/js/main.14587b18.js"
+    "static/js/main.ddae3481.js"
   ]
 }
