@@ -27,7 +27,7 @@ function App() {
        <UserAuthContextProvider>
         <GridNavigation />
         <Routes>
-          <Route exact path='sneakerqueen' element={<GridMainBody />} />
+          <Route exact path='/sneakerqueen/sneakerqueen' element={<GridMainBody />} />
           <Route path='collections' element={<Collections products={products} />} />
           <Route path='collections/:id' element={<SingleItem />} />
           <Route path='men' element={<Men products={products} />} />
