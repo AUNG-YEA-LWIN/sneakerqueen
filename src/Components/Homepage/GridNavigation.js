@@ -45,7 +45,7 @@ function GridNavigation(props) {
                 <FontAwesomeIcon icon={faBars} size='2x' color='grey' className='bars-icon' onClick={showHide} />
             </div>
             <div className='logo-image'>
-                <Link to='/sneakerqueen'><img src={logoimage} alt='logoimage' /></Link>
+                <Link to='/'><img src={logoimage} alt='logoimage' /></Link>
             </div>
             <MenuItems />
 
