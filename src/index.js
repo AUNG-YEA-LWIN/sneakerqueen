@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 ReactDOM.render(
   <Provider store={store}>
   <React.StrictMode>
-    <BrowserRouter basename='/sneakerqueen'>
+    <BrowserRouter basename='/'>
       <App />
     </BrowserRouter>
   </React.StrictMode>
