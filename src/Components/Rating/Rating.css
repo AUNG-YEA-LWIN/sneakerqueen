@@ -1,0 +1,17 @@
+.star-div {
+
+    margin-left: 13%;
+}
+
+.star-icon {
+
+    padding-left: 3px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.star-rating {
+
+    display: none;
+}
