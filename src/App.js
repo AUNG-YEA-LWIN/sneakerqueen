@@ -32,7 +32,7 @@ function App({ currentItem }) {
           <Route exact path='/' element={<GridMainBody />} />
           <Route path='collections' element={<Collections products={products} />} />
           {!currentItem ? (
-            <Route path='/collections/:id' element={<Navigate to='/collections' />} />
+            <Route path='collections/:id' element={<Navigate to='/collections' />} />
           ) : (
             <Route path='collections/:id' element={<SingleItem />} />
           )}
