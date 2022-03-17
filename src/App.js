@@ -16,20 +16,26 @@ import Profilepage from './Components/Profile/Profilepage'
 import Login from './Components/Login/Login';
 import { UserAuthContextProvider } from './context/AuthContext';
 import { ProtectedRoutes } from './Components/Protected/ProtectedRoutes';
+import { connect } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 import './App.css';
 
-function App() {
+function App({ currentItem }) {
   const products = titles;
 
 
   return (
-      <>
-       <UserAuthContextProvider>
+    <>
+      <UserAuthContextProvider>
         <GridNavigation />
         <Routes>
           <Route exact path='/' element={<GridMainBody />} />
           <Route path='collections' element={<Collections products={products} />} />
-          <Route path='collections/:id' element={<SingleItem />} />
+          {!currentItem ? (
+            <Route path='/collections/:id' element={<Navigate to='/collections' />} />
+          ) : (
+            <Route path='collections/:id' element={<SingleItem />} />
+          )}
           <Route path='men' element={<Men products={products} />} />
           <Route path='women' element={<Women products={products} />} />
           <Route path='boy' element={<Boy />} />
@@ -42,9 +48,15 @@ function App() {
         </Routes>
       </UserAuthContextProvider>
 
-      </>
+    </>
 
   );
 }
 
-export default App
+const mapStateToProps = state => {
+  return {
+    currentItem: state.shop.currentItem
+  }
+}
+
+export default connect(mapStateToProps)(App)

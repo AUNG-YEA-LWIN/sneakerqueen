@@ -9,6 +9,7 @@ function AddToCart({ cart }) {
   const [totalItems, setTotalItems] = useState(0)
 
   useEffect(() => {
+
     let items = 0;
     let price = 0;
 
