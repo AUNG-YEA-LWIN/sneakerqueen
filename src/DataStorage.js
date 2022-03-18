@@ -9,6 +9,7 @@ import Product8 from './images/product-8.jpg';
 import Product9 from './images/product-9.jpg';
 import Product10 from './images/product-10.jpg';
 import Product11 from './images/product-11.jpg';
+import Product12 from './images/product-12.jpeg';
 
 const titles = [
     {
@@ -81,7 +82,7 @@ const titles = [
         price: 127,
         image: Product9,
         description: 'Sneakers are shoes primarily designed for sports or other forms of physical exercise',
-        caption: 'Skechers Men\'s Performance Go Walk Max-54609 Sneaker'
+        caption: 'Skechers Men\'s Performance Go Walk Max-54620 Sneaker'
     },
     {
         id: 10,
@@ -89,7 +90,7 @@ const titles = [
         price: 126,
         image: Product10,
         description: 'Sneakers are shoes primarily designed for sports or other forms of physical exercise',
-        caption: 'Skechers Men\'s Performance Go Walk Max-54609 Sneaker'
+        caption: 'Skechers Women\'s Performance Go Walk Max-54621 Sneaker'
     },
     {
         id: 11,
@@ -97,7 +98,15 @@ const titles = [
         price: 126,
         image: Product11,
         description: 'Sneakers are shoes primarily designed for sports or other forms of physical exercise',
-        caption: 'Skechers Men\'s Performance Go Walk Max-54609 Sneaker'
+        caption: 'Skechers Girl\'s Performance Go Walk Max-54622 Sneaker'
+    },
+    {
+        id: 12,
+        gender: 'Boy',
+        price: 131,
+        image: Product12,
+        description: 'Sneakers are shoes primarily designed for sports or other forms of physical exercise',
+        caption: 'Skechers Boy\'s Performance Go Walk Max-54623 Sneaker'
     }
 ];
 
